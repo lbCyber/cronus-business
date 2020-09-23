@@ -1,0 +1,1060 @@
+/*
+
+	FEATURED
+
+*/
+
+.featured {
+  padding-bottom: 200px;
+  .contained {
+    align-self: flex-start;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+  }
+}
+
+.featuredvideo {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  max-width: 1400px;
+  align-items: center;
+  margin-top: 70px;
+  video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 50px -5px $charcoal;
+    max-width: 565px !important;
+    min-width: 350px;
+  }
+}
+
+.playbutton {
+  background-image: url(../assets/Icons/videoplay.svg),url(../assets/Icons/videoplayhover.svg);
+  background-size: contain;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  &:hover {
+    background-image: url(../assets/Icons/videoplayhover.svg);
+  }
+}
+
+.playvid {
+  display: none;
+}
+
+
+/*
+
+	MISSION
+
+*/
+
+.mission {
+  padding-top: 320px;
+  padding-bottom: 55px;
+  h2 {
+    padding: 0 35px 20px;
+  }
+}
+
+.missionbuttons {
+  padding: 0;
+  margin-top: 30px;
+  max-width: 320px;
+  justify-content: space-around;
+}
+
+
+/*
+
+	SERVICES
+
+*/
+
+.services {
+  padding-bottom: 30px;
+  .centercontainer {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
+
+.servicesboxes {
+  margin: 10px 20px;
+  min-height: 200px;
+  min-width: 250px;
+  padding: 20px;
+  text-align: left;
+  width: calc(33% - 40px);
+}
+
+.serviceimg {
+  width: 35px;
+}
+
+.servicetext {
+  line-height: 20px;
+}
+
+
+/*
+
+	CALLBACK
+
+*/
+
+.cbform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.callback {
+  background-image: url(../assets/image-3.jpeg);
+  background-size: cover;
+  .centercontainer {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .sectionseparator::before {
+    color: #fff;
+  }
+  button {
+    margin-top: 15px;
+  }
+}
+
+.callbackdrop,
+.inputtext {
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  border: 0;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 12px 14px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.callbackdrop {
+  background-image: url(../assets/Icons/arrow.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  font-size: 1rem;
+  height: 100%;
+  &:focus {
+    outline-color: rgba(255, 255, 255, .3);
+  }
+}
+
+.inputtext:focus {
+  outline: 0;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.callbackinputs {
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  min-width: 250px;
+}
+
+
+/* ORDER OF FOLLOWING STYLES MUST NOT CHANGE */
+
+.inputtext+label {
+  color: $violet;
+}
+
+.callbackinputs:focus-within label.inputtext,
+.inputtext+label {
+  position: absolute;
+  left: 25px;
+  pointer-events: none;
+  transition: all .5s;
+  top: 44px;
+}
+
+.inputtext+label {
+  /* Fallback for browsers that don't support placeholder-shown */
+  top: 44px;
+  opacity: 1;
+}
+
+.inputtext:placeholder-shown+label {
+  top: 18px;
+  opacity: .5;
+  color: #fff;
+}
+
+.callbackinputs:focus-within label {
+  opacity: 1;
+  top: 44px;
+}
+
+
+/* The above has the input's label (which substitutes a blank placeholder) drop down when the input has focus,
+and stay down when the empty placeholder is no longer being rendered (when the field has something typed in it)
+so the input is always clearly marked, for accessibility's sake, while keeping with the target design! */
+
+
+/*
+
+	SUMMARY
+
+*/
+
+.summary {
+  flex-wrap: wrap;
+  text-align: left;
+  .button {
+    text-align: center;
+    margin-top: 30px;
+    align-self: flex-start;
+    padding: 10px;
+    font-size: .9rem;
+  }
+}
+
+.summarytext {
+  flex-basis: calc(50% - 10px);
+  font-size: 90%;
+}
+
+.summarytextcaption {
+  font-size: 1.2rem;
+  padding-top: 15px;
+}
+
+.summarychart {
+  flex-basis: 50%;
+  padding: 0;
+  margin-left: 10px;
+  position: relative;
+  height: 100%;
+  align-self: center;
+}
+
+.chartobjects {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.chartline {
+  border-left: #fff thin solid;
+  position: absolute;
+  bottom: 11.1%;
+  left: 68.2%;
+  height: 73.6%;
+}
+
+.chartpoints {
+  position: absolute;
+  left: 67.5%;
+  width: 1.6%;
+  height: calc(1.6%*(600/385));
+  /* (proportional height value) * (the aspect ratio of the chart image) */
+  border-radius: 100%;
+  box-shadow: 0 0 0 .1em #fff;
+}
+
+.point1 {
+  bottom: 27.6%;
+  background-color: #d59;
+}
+
+.point2 {
+  bottom: 50.8%;
+  background-color: #34d;
+}
+
+.point3 {
+  bottom: 83.6%;
+  background-color: #4df;
+}
+
+.summarynumbers {
+  flex-basis: 25%;
+  padding-top: 40px;
+  align-self: flex-start;
+  h3 {
+    font-size: .9em;
+    line-height: 20px;
+  }
+  h5 {
+    font-size: 2.6em;
+  }
+}
+
+p.summarycaption {
+  font-size: .65em;
+  font-weight: 600;
+  line-height: 15px;
+  padding-top: 5px;
+}
+
+
+/*
+
+	GALLERY
+
+*/
+
+.project {
+  padding-top: 80px;
+  .contained {
+    max-width: 120px;
+    margin: 20px;
+  }
+}
+
+.gallery,
+.project .centercontainer {
+  flex-wrap: wrap;
+}
+
+.cross {
+  &::after {
+    border-top: thin solid;
+    content: "";
+    height: 0;
+    left: calc(50% - 15px);
+    position: absolute;
+    top: calc(33% + 15px);
+    width: 30px;
+  }
+  &::before {
+    border-left: thin solid;
+    content: "";
+    height: 30px;
+    left: 50%;
+    position: absolute;
+    top: 33%;
+    width: 0;
+  }
+}
+
+.gallery {
+  display: flex;
+}
+
+.galleryimg {
+  margin: 0;
+  overflow: hidden;
+  figcaption {
+    align-content: center;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    line-height: 30px;
+    opacity: 0;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    transition: all .4s ease;
+    width: 100%;
+  }
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+  p {
+    font-size: 1rem;
+  }
+  &:hover figcaption {
+    opacity: 1;
+  }
+}
+
+.landscape,
+.portrait {
+  max-height: 380px;
+  /* Firefox and Edge seem to need this to fit things properly */
+  position: relative;
+}
+
+.landscape {
+  width: 40%;
+}
+
+.portrait {
+  width: 20%;
+}
+
+
+/*
+
+	TEAM
+
+*/
+
+.teamcontainer {
+  justify-content: space-around;
+  padding: 30px;
+  flex-wrap: wrap;
+  figure:nth-of-type(1) img {
+    transform: scale(1.2) translateX(10px);
+  }
+  figure:nth-of-type(1n+2) img {
+    transform: scale(1.2) translateY(24px);
+  }
+}
+
+.teampic {
+  height: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+  color: #fff;
+  img {
+    min-height: 100%;
+    object-fit: cover;
+  }
+  figcaption {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    transition: all .4s ease;
+    width: 100%;
+    opacity: 0;
+  }
+  &:hover figcaption {
+    opacity: 1;
+  }
+}
+
+.teamprofile {
+  width: 270px;
+  padding: 0;
+}
+
+.names {
+  color: $rose;
+  margin: 5px 0;
+}
+
+.icons {
+  position: absolute;
+  top: 45%;
+  i {
+    min-width: 35px;
+    cursor: pointer;
+    color: $snow;
+    &:hover {
+      text-shadow: 0 0 12px #fff;
+      color: #fff;
+    }
+  }
+}
+
+.stats,
+.statscontainer {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.statscontainer {
+  width: calc(50% - 40px);
+  height: 55px;
+  flex-direction: row;
+  font-weight: 800;
+  p {
+    align-self: flex-start;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+  }
+}
+
+.bar,
+.barfill {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar {
+  background-color: $ghostwhite;
+  width: 100%;
+  position: relative;
+  height: 7px;
+}
+
+.barfill {
+  background-image: linear-gradient(90deg, $rose, $violet);
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+/*
+
+	CLIENTS
+
+*/
+
+.clients {
+  padding: 160px 0 110px;
+}
+
+.clientquote h2 {
+  width:95%;
+}
+
+.quotebox {
+  h2 {
+    font-size: 1.3em;
+    line-height: 30px;
+    padding: 0;
+    transform: skewX(-5deg);
+    position: relative;
+  }
+  h4 {
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  .serif,
+  h4 {
+    font-size: 1rem;
+  }
+  &::before {
+    content: "“";
+    font-size: 20rem;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: -145px;
+    opacity: .5;
+  }
+}
+
+.clientlogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  padding: 0 15%;
+  a {
+    flex-shrink: 1;
+  }
+  img {
+    margin: 10px 40px;
+    width: 100px;
+  }
+}
+
+.quoteselect {
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  padding: 20px 0;
+}
+
+
+/*
+
+	BLOG
+
+*/
+
+.blog {
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.blogs {
+  flex-wrap: wrap;
+}
+
+.postericon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.pic1 {
+  transform: translateY(-6px);
+}
+
+.pic3 {
+  transform: scale(2.6) translate(-1px, 2px);
+}
+
+.blogcontent,
+.blogpost {
+  justify-content: space-between;
+}
+
+.blogpost {
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 12px;
+  background: #fff;
+  text-align: left;
+  min-width: 200px;
+  width: calc((100%/3) - 24px);
+  padding: 0;
+}
+
+.blogpost:hover h3,
+.poster:hover {
+  color: $rose;
+}
+
+.blogcontent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  min-height: 185px;
+  line-height: 15px;
+  h3 {
+    margin: 5px 0;
+  }
+}
+
+.poster {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  p {
+    padding-left: 10px;
+  }
+}
+
+
+/*
+
+	CONTACT
+
+*/
+
+.inputtextwhite {
+  background-color: $ghostwhite;
+  border: 0;
+  border-radius: 30px;
+  color: #555;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 10px 14px;
+  text-transform: uppercase;
+  width: 100%;
+  &:focus {
+    outline: 0;
+    background-color: $lightgrey;
+  }
+}
+
+.contactinput {
+  position: relative;
+  flex-basis: 70%;
+  font-size: 12px;
+}
+
+.contactbox {
+  text-align: left;
+  width: 46%;
+  justify-content: flex-start;
+  min-height: 240px;
+  h2 {
+    font-size: 2.5rem;
+    line-height: 30px;
+  }
+}
+
+.contactcaption {
+  padding-top: 15px;
+  line-height: 20px;
+  flex-basis: 100%;
+}
+
+.contactForm {
+  align-items: flex-end;
+}
+
+.socmediabtns,
+.subscribebutton {
+  min-height: 30px;
+}
+
+.subscribebutton button {
+  width: 110px;
+  margin-left: 10px;
+  height: 30px;
+  font-size: .8rem;
+  padding: 0;
+}
+
+.contact .centercontainer {
+  justify-content: space-between;
+}
+
+.socmediabtns {
+  align-items: flex-end;
+  font-size: 1.1rem;
+  i {
+    color: $grey;
+    background-color: $ghostwhite;
+    text-align: center;
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    padding-top: 8px;
+    &:hover {
+      color: #fff;
+      background-color: $rose;
+      box-shadow: 3px 3px 10px gray;
+    }
+  }
+  a {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+
+
+/* ORDER OF FOLLOWING STYLES MUST NOT CHANGE */
+
+.inputtextwhite+label {
+  color: $violet;
+  font-weight: 800;
+}
+
+.contactinput:focus-within label.inputtextwhite,
+.inputtextwhite+label {
+  position: absolute;
+  left: 20px;
+  pointer-events: none;
+  transition: all .5s;
+  top: 33px;
+}
+
+.inputtextwhite+label {
+  /* Fallback for browsers that don't support placeholder-shown */
+  top: 33px;
+  opacity: 1;
+}
+
+.inputtextwhite:placeholder-shown+label {
+  top: 8px;
+  opacity: .5;
+  color: #000;
+}
+
+.contactinput:focus-within label {
+  opacity: 1;
+  top: 33px;
+}
+
+
+/* Have a line slide down links on hover for as long as it makes sense */
+
+@media only screen and (min-width:1024px) {
+  .mainheadernav a:hover .navlinks::before {
+    opacity: 1;
+    top: -50px;
+  }
+}
+
+
+/*
+
+  MEDIA QUERIES
+
+*/
+
+@media only screen and (max-width:1023px) {
+  .cross {
+    &::after {
+      top: calc(15% + 15px);
+    }
+    &::before {
+      top: 15%;
+    }
+  }
+  .galleryimg {
+    figcaption {
+      height: 30%;
+      bottom: 0;
+      opacity: 1;
+      top: unset;
+    }
+    .galleryimg:nth-child(2n) {
+      overflow: visible;
+      figcaption::after {
+        content: "";
+        height: 33%;
+        border-left: 1px solid rgba(255, 255, 255, .7);
+        position: absolute;
+        left: -.5px;
+        top: 33%;
+      }
+    }
+    img {
+      object-position: bottom;
+    }
+    &:nth-child(3) img {
+      object-position: top;
+    }
+    &:nth-child(5) img {
+      object-position: 30%;
+    }
+    &:nth-child(6) img {
+      object-position: unset;
+    }
+  }
+  .landscape,
+  .portrait {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:852px) {
+  .servicesboxes {
+    margin: 0;
+    width: calc(50% - 40px);
+  }
+  .summarytext {
+    flex-basis: 100%;
+  }
+  .summary .button {
+    margin: 30px auto 0;
+  }
+  .summarychart {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .summarynumbers {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 20px;
+  }
+  footer .centercontainer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    .footer1 {
+      order: 0;
+      flex-basis: 50%;
+      .footerobj:nth-of-type(2) {
+        flex-direction:column;
+      }
+    }
+    .footer2 {
+      order: 2;
+      flex-basis: 60%;
+    }
+    .footer3 {
+      order: 1;
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .project {
+    .centercontainer {
+      justify-content: space-around;
+    }
+    .button {
+      flex-basis: calc(25% - 20px);
+      margin: 0 10px;
+    }
+  }
+  .teamprofile {
+    padding: 10px;
+  }
+  .blogpost {
+    width: 90%;
+  }
+  footer .centercontainer .footer2 {
+    flex-basis: 80%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  footer .centercontainer {
+    align-items:center;
+    .footer1 {
+      order: 0;
+      flex-basis: 100%;
+    }
+    .footer2 {
+      order: 2;
+      flex-basis: 100%;
+    }
+    .footer3 {
+      order: 1;
+      flex-basis: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width:570px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+  .featured {
+    padding-bottom: 50px;
+    .centercontainer {
+      flex-direction: column;
+      justify-content: center;
+      .contained {
+        max-width: 310px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .featuredvideo {
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 285px;
+    margin: 70px auto 0;
+    transition: box-shadow .5s;
+    &:hover {
+      box-shadow: 0 0 15px $ghostwhite;
+    }
+    video {
+      display: none;
+    }
+    .playvid {
+      display: block;
+      font-size: 3rem;
+      font-weight: bolder;
+      padding-right: 20px
+    }
+    .playbutton {
+      position: relative;
+      background-image: url(../assets/Icons/videoplayhover.svg)
+    }
+  }
+  .mission {
+    padding-top: 40px;
+  }
+  .mission h2 {
+    padding: 0 10px 20px;
+  }
+  .services {
+    .head_small {
+      padding: 0 10px;
+    }
+  }
+  .servicesboxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - 40px);
+    min-height: 160px;
+    h3 {
+      width: 80%;
+      font-size: 1.5rem;
+      align-self: flex-end;
+      padding: 0 0 5px 10px;
+    }
+  }
+  .serviceimg {
+    align-self: flex-end;
+  }
+  .summarytext {
+    padding: 10px;
+  }
+  .summarytextcaption {
+    text-align: justify;
+  }
+  .summarychart {
+    margin:0 0 30px;
+  }
+  .project {
+    .button {
+      flex-basis: calc(50% - 20px);
+      margin: 10px 10px;
+      max-width: unset;
+    }
+  }
+  .stats {
+    flex-direction: column;
+    .statscontainer {
+      width: 100%;
+    }
+  }
+  .clientlogos {
+    padding: 0 10px;
+    img {
+      width: 75px;
+      margin: 20px;
+    }
+  }
+  .contact .centercontainer {
+    flex-direction: column;
+  }
+  .contactbox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contactForm {
+    flex-direction: column;
+  }
+  .contactinput {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .subscribebutton {
+    width: 100%;
+    button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+}
+
+@media only screen and (max-width:556px) {
+  .callbackinputs {
+    width:100%
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .summarynumbers {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px;
+    width:100%;
+    font-size:2rem;
+  }
+  .landscape,
+  .portrait {
+    width: 100%;
+    height: 300px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: 15%;
+    }
+  }
+  .blogpost {
+    width: 100%;
+  }
+}

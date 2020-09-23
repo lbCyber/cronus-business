@@ -1,0 +1,60 @@
+@keyframes navClickAnim {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  50% {
+    transform: translate(-10px, 0) rotate(-90deg);
+  }
+  100% {
+    transform: translate(10px, 0) rotate(-90deg);
+  }
+}
+
+@keyframes navClickAnimBar1 {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(11px);
+    opacity: 1;
+  }
+  45.1%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes navClickAnimBar2 {
+  0%,
+  49% {
+    padding-top: 0px;
+    background-position-y: 25px;
+    transform: translateY(0);
+  }
+  50% {
+    padding-top: 35px;
+    background-position-y: 25px;
+    transform: translateY(-25px);
+  }
+  100% {
+    padding-top: 35px;
+    background-position-y: 0;
+    transform: translateY(-18px);
+  }
+}
+
+@keyframes navClickAnimBar3 {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-11px);
+    opacity: 1;
+  }
+  45.1%,
+  100% {
+    opacity: 0;
+  }
+}

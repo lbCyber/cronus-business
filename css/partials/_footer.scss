@@ -1,0 +1,114 @@
+
+/*
+
+	FOOTER
+
+*/
+
+.footer {
+  text-align: left;
+  align-content: space-between;
+  line-height: 20px;
+  padding: 70px 0 40px;
+}
+
+.footer a {
+  color: $snow;
+}
+
+.footer a:hover {
+  color: $rose;
+  text-shadow: 0 0 8px #000;
+}
+
+.footerheader,
+.footerheadermini {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.footerheader {
+  align-content: center;
+  height: 60px;
+  padding-top: 10px;
+  font-size: .9rem;
+}
+
+.footerheadermini {
+  font-size: .8rem;
+  line-height: 18px;
+}
+
+.logofooter {
+  max-width: 130px;
+  height: 60px;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.footer1,
+.footer2,
+.footer3 {
+  flex-basis: 40%;
+  justify-content: flex-start;
+}
+
+.footer2,
+.footer3 {
+  flex-basis: 30%;
+}
+
+.footerobj {
+  margin: 5px 0;
+}
+
+.footer .simplecontainer p {
+  margin-right: 20px;
+}
+
+.footersocialbuttons,
+.times {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footersocialbuttons {
+  max-width: 100px;
+  font-weight: initial;
+}
+
+.footersocialbuttons a {
+  color: #fff;
+}
+
+.times {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.hours {
+  text-align: right;
+}
+
+.tw-embedlogo {
+  color: #fff;
+  margin-right: 5px;
+  padding-top: 6px;
+  float: left;
+  width: calc(20% - 20px);
+}
+
+.tw-embed {
+  float: left;
+  width: 80%;
+}
+
+.twitterhandle {
+  color: #fff;
+  font-weight: 800;
+}

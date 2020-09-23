@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px">
+	<g id="circle">
+		<circle fill="#f1f8fc" cx="50" cy="50" r="50"/>
+	</g>
+	<g id="arrow">
+		<polygon fill="#ED145B" points="39.987,65.243 64.704,50 39.987,34.755"/>
+	</g>
+</svg>
